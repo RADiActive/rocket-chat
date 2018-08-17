@@ -46,7 +46,6 @@ class Group extends Entity
         $group = $this->handle_response($response, new GroupActionException(), ['group']);
         $this->id = $group->_id;
         $this->name = $group->name;
-        $this->members = $group->usernames;
         return $this;
     }
 
