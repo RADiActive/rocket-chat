@@ -399,4 +399,20 @@ class Group extends Entity
         $this->handle_response($response, new GroupActionException());
         return $this;
     }
+    
+    /** Getters and Setters */
+    public function id()
+    {
+        return $this->id;
+    }
+    
+    public function name()
+    {
+        return $this->name;
+    }
+    
+    public function members()
+    {
+        return $this->members;
+    }    
 }
